@@ -336,7 +336,7 @@ const Dashboard = ({ darkMode }) => {
               darkMode={darkMode}
             />
             <QuickActionItem
-              icon={Compress}
+              icon={Archive}
               title="Smart Compression"
               description="Reduce file size intelligently"
               darkMode={darkMode}
