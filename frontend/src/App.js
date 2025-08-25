@@ -4,6 +4,10 @@ import axios from 'axios';
 import { Toaster } from 'sonner';
 import './App.css';
 
+// Import components
+import DocumentManager from './components/DocumentManager';
+import AIChat from './components/AIChat';
+
 // Import Lucide icons
 import { 
   Upload, FileText, MessageCircle, Settings, Download, Trash2, 
