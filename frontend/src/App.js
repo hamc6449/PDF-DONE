@@ -455,7 +455,7 @@ const AIChat = ({ darkMode }) => (
 );
 
 // Settings Component (Placeholder)
-const Settings = ({ darkMode }) => (
+const SettingsPage = ({ darkMode }) => (
   <div className="p-6">
     <h1 className={`text-2xl font-bold ${darkMode ? 'text-white' : 'text-slate-900'}`}>
       Settings
