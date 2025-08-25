@@ -7,7 +7,7 @@ import './App.css';
 // Import Lucide icons
 import { 
   Upload, FileText, MessageCircle, Settings, Download, Trash2, 
-  Bot, Sparkles, Eye, Search, Zap, Shield, Compress, FileType,
+  Bot, Sparkles, Eye, Search, Zap, Shield, Archive, FileType,
   Brain, Activity, Moon, Sun, Menu, X, Plus, Send, User,
   FileSpreadsheet, FileImage, Globe, Type, RotateCw, Crop,
   Scissors, Copy, Move, ArrowUpDown, Palette, Layers
