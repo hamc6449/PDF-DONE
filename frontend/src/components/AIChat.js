@@ -6,7 +6,7 @@ import {
   Download, Copy, MessageCircle, Brain, Zap,
   Settings, ChevronDown, ChevronUp, Paperclip,
   Trash2, Archive, MoreHorizontal, CheckCircle,
-  AlertCircle, Clock, Star, BookOpen, Search
+  AlertCircle, Clock, Star, BookOpen, Search, X
 } from 'lucide-react';
 
 import { Button } from './ui/button';
