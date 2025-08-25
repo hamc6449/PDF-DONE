@@ -84,7 +84,7 @@ function App() {
               <Route path="/" element={<Dashboard darkMode={darkMode} />} />
               <Route path="/documents" element={<DocumentManager darkMode={darkMode} />} />
               <Route path="/ai-chat" element={<AIChat darkMode={darkMode} />} />
-              <Route path="/settings" element={<Settings darkMode={darkMode} />} />
+              <Route path="/settings" element={<SettingsPage darkMode={darkMode} />} />
             </Routes>
           </main>
         </div>
