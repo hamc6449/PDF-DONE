@@ -67,7 +67,7 @@ class ChatResponse(BaseModel):
 
 class AITaskRequest(BaseModel):
     document_id: str
-    task_type: str = Field(..., regex="^(summarize|extract_key_points|rewrite|analyze|translate|compress_suggestions)$")
+    task_type: str = Field(..., pattern="^(summarize|extract_key_points|rewrite|analyze|translate|compress_suggestions)$")
     additional_instructions: Optional[str] = None
     model_provider: str = Field(default="openai")
     model_name: str = Field(default="gpt-4o-mini")
@@ -86,12 +86,12 @@ class ModelProvider(BaseModel):
 
 class PDFConversionRequest(BaseModel):
     document_id: str
-    target_format: str = Field(..., regex="^(word|excel|powerpoint|txt|html|image)$")
-    quality: Optional[str] = Field(default="high", regex="^(low|medium|high)$")
+    target_format: str = Field(..., pattern="^(word|excel|powerpoint|txt|html|image)$")
+    quality: Optional[str] = Field(default="high", pattern="^(low|medium|high)$")
 
 class PDFCompressionRequest(BaseModel):
     document_id: str
-    compression_level: str = Field(default="medium", regex="^(low|medium|high|maximum)$")
+    compression_level: str = Field(default="medium", pattern="^(low|medium|high|maximum)$")
 
 class PDFSecurityRequest(BaseModel):
     document_id: str
@@ -101,7 +101,7 @@ class PDFSecurityRequest(BaseModel):
 class OCRRequest(BaseModel):
     document_id: str
     language: str = Field(default="eng")
-    output_format: str = Field(default="text", regex="^(text|json|searchable_pdf)$")
+    output_format: str = Field(default="text", pattern="^(text|json|searchable_pdf)$")
 
 # AI Service Manager
 class AIServiceManager:
