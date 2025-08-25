@@ -435,28 +435,10 @@ const QuickActionItem = ({ icon: Icon, title, description, darkMode }) => (
 );
 
 // Document Manager Component (Placeholder)
-const DocumentManager = ({ darkMode }) => (
-  <div className="p-6">
-    <h1 className={`text-2xl font-bold ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-      Document Manager
-    </h1>
-    <p className={`${darkMode ? 'text-slate-400' : 'text-slate-600'} mt-2`}>
-      Document management features coming soon...
-    </p>
-  </div>
-);
+// Now using external component - see DocumentManager.js
 
-// AI Chat Component (Placeholder)
-const AIChat = ({ darkMode }) => (
-  <div className="p-6">
-    <h1 className={`text-2xl font-bold ${darkMode ? 'text-white' : 'text-slate-900'}`}>
-      AI Chat
-    </h1>
-    <p className={`${darkMode ? 'text-slate-400' : 'text-slate-600'} mt-2`}>
-      AI chat interface coming soon...
-    </p>
-  </div>
-);
+// AI Chat Component (Placeholder)  
+// Now using external component - see AIChat.js
 
 // Settings Component (Placeholder)
 const SettingsPage = ({ darkMode }) => (
