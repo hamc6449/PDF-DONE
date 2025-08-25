@@ -49,14 +49,14 @@ class DocumentMetadata(BaseModel):
     description: Optional[str] = None
 
 class ChatMessage(BaseModel):
-    role: str = Field(..., regex="^(system|user|assistant)$")
+    role: str = Field(..., pattern="^(system|user|assistant)$")
     content: str = Field(..., min_length=1)
     timestamp: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
 
 class ChatRequest(BaseModel):
     document_id: Optional[str] = None
     messages: List[ChatMessage]
-    model_provider: str = Field(default="openai", regex="^(openai|anthropic|gemini)$")
+    model_provider: str = Field(default="openai", pattern="^(openai|anthropic|gemini)$")
     model_name: str = Field(default="gpt-4o-mini")
     temperature: Optional[float] = Field(0.7, ge=0.0, le=2.0)
 
